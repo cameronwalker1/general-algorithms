@@ -6,7 +6,7 @@ function [ outArr ] = insertionSort( arr )
     for i=3:length(arr)
         key = arr(i);
         j = i - 1;
-        while (j > 0) && (arr(j) > key)
+        while (j >= 0) && (arr(j) > key)
            arr(j + 1) = arr(j);
            j = j - 1;
         end
